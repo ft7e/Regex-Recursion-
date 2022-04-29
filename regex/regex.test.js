@@ -33,7 +33,7 @@ function imagesSearcher(text) {
   // Add your logic.
   const regex = /^\w+\.(png|jpeg|jpg)$/;
   let textArr = text.split(" ");
-  for (element of textArr) {
+  for (const element of textArr) {
     if (regex.test(element)) arr.push(element);
   }
   return arr;
